@@ -3,4 +3,4 @@ Para conseguir visualizar a modelagem instale o BRMODELO
 Essa esta API sendo desenvolvida no intuito de manter varias entidades em relacionamento
 umas com as outras.
 Assim como esta modelada: onde o CLIENTE (pj ou Pf) consegue fazer um PEDIDO de um
-LIVRO onde esse livro,tem que vir obrigatoriamente de uma EDITORA e esta dlivroisponivel em ESTOQUE
+LIVRO onde esse livro,tem que vir obrigatoriamente de uma EDITORA e esta disponivel em ESTOQUE

@@ -16,7 +16,7 @@ public interface EditoraAPI {
     @ResponseStatus(code = HttpStatus.OK)
     EditoraDetalhadaResponse getDetalhesEditora(@PathVariable Long codEditora);
 
-    @GetMapping("FIND_ALL")
+    @GetMapping("/FIND_ALL")
     @ResponseStatus(code = HttpStatus.OK)
     List<EditoraListResponse> getListaTodasEditoras();
 

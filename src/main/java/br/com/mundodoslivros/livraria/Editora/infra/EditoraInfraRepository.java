@@ -15,7 +15,6 @@ import java.util.List;
 @Log4j2
 @RequiredArgsConstructor
 public class EditoraInfraRepository implements EditoraRepository {
-
     private final EditoraSpringDataJPARepository jpaRepositoryEditora;
 
     @Override

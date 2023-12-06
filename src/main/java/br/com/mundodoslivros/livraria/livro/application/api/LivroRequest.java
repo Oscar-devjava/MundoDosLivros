@@ -10,16 +10,15 @@ import java.time.LocalDate;
 @Getter
 public class LivroRequest {
     @NotBlank
-    private String nome;
+    private String titulo;
     @NotBlank
     private String autor;
-    @NotBlank
-    private String titulo;
     @NotNull
     private Categoria categoria;
     @NotNull
     private LocalDate dataLancamento;
     @NotNull
     private double valor;
+    private int quantidade;
 
 }

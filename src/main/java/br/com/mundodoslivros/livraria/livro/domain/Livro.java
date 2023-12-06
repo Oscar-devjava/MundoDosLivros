@@ -7,8 +7,9 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
-@Entity
+@Entity(name="tb_livros")
 @Getter
 public class Livro {
     @Id
@@ -17,25 +18,27 @@ public class Livro {
     @NotNull
     private Long codEditora;
     @NotBlank
-    private String nome;
+    @Column(unique = true)
+    private String titulo;
     @NotBlank
     private String autor;
-    @NotBlank
-    private String titulo;
+    @Enumerated(EnumType.STRING)
     private Categoria categoria;
     @NotNull
     private LocalDate dataLancamento;
     @NotNull
     private double valor;
-
+    private int quantidade;
+    LocalDateTime dataHoraDoCadastro;
 
     public Livro(LivroRequest livroRequest, Long codEditora) {
         this.codEditora = codEditora;
-        this.nome = livroRequest.getNome();
         this.autor = livroRequest.getAutor();
         this.titulo = livroRequest.getTitulo();
         this.categoria = livroRequest.getCategoria();
         this.dataLancamento = livroRequest.getDataLancamento();
         this.valor = livroRequest.getValor();
+        this.quantidade = livroRequest.getQuantidade();
+        this.dataHoraDoCadastro = LocalDateTime.now();
     }
 }

@@ -8,10 +8,7 @@ import br.com.mundodoslivros.livraria.Editora.application.api.EditoraRequest;
 import java.util.List;
 
 public interface EditoraService {
-
     EditoraIdResponse regitraNovaEditora(EditoraRequest editoraRequest);
-
     EditoraDetalhadaResponse detalhesEditora(Long codEditora);
-
     List<EditoraListResponse> listaTodasEditoras();
 }

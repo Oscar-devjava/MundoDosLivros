@@ -9,7 +9,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
-@Entity
+@Entity(name="tb_editora")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Editora {

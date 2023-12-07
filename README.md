@@ -3,3 +3,4 @@
 ### Essa API irá manter relacionamento entre as entidades LIVRO, EDITORA, CLIENTES e PEDIDOS <p>  Para conseguir vizualizar a modelagem de dados instale o BRModelo
 
 
+iniciel outro proj, fiquem a vontade para seguirem a partir daqui
